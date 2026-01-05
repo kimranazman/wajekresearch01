@@ -619,6 +619,53 @@
             .layout-wrapper { grid-template-columns: 1fr; }
             .content-section { box-shadow: none; border: 1px solid #ddd; }
         }
+
+        /* Q&A Summary Styles */
+        .qa-section {
+            margin-bottom: 35px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .qa-section:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .qa-question {
+            font-size: 1.15rem;
+            color: var(--primary);
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 4px solid var(--primary);
+            line-height: 1.4;
+        }
+
+        .qa-answer {
+            padding-left: 20px;
+        }
+
+        .qa-answer p {
+            margin-bottom: 15px;
+            line-height: 1.8;
+            color: var(--text-primary);
+            text-align: justify;
+        }
+
+        .qa-answer p:last-child {
+            margin-bottom: 0;
+        }
+
+        .qa-answer strong {
+            color: var(--text-primary);
+        }
+
+        .qa-answer em {
+            color: var(--primary-dark);
+            font-style: normal;
+            font-weight: 600;
+        }
     </style>
 </head>
 <body>
@@ -639,6 +686,7 @@
                 <a href="#solar" class="nav-link"><span class="nav-icon">☀️</span>Solar & Photocatalysis</a>
                 <a href="#workflow" class="nav-link"><span class="nav-icon">🔬</span>CuO-ZnO Workflow</a>
                 <a href="#attention" class="nav-link"><span class="nav-icon">⚠️</span>Key Points</a>
+                <a href="#summary" class="nav-link"><span class="nav-icon">📝</span>Q&A Summary</a>
                 <a href="#references" class="nav-link"><span class="nav-icon">📚</span>References</a>
             </nav>
         </aside>
@@ -1654,6 +1702,156 @@
                     <div class="info-card" style="border-left-color: #8b5cf6;">
                         <h4>10. Safety for CuO-ZnO</h4>
                         <p>Nanoparticle handling precautions, proper waste disposal, eye/skin protection during synthesis and handling.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Q&A Summary Section -->
+            <section id="summary" class="content-section">
+                <h2 class="section-title"><span class="icon">📝</span> Research Questions Summary</h2>
+
+                <p style="margin-bottom: 30px; color: var(--text-secondary); font-style: italic;">
+                    This section provides comprehensive answers to the key research questions based on analysis of 15 research papers using 20 parallel AI agents.
+                </p>
+
+                <div class="qa-section">
+                    <h3 class="qa-question">1. How do the materials differ across the papers?</h3>
+                    <div class="qa-answer">
+                        <p>The materials used in WEG devices can be categorized into six main groups, each with distinct characteristics and performance profiles. <strong>Carbon-based materials</strong> (carbon black, graphene oxide, reduced GO, and carbon nanotubes) are the most widely studied, offering tunable surface chemistry and good electrical conductivity. Carbon black is particularly popular due to its low cost and ease of synthesis, achieving voltages of 0.4-1.5V (<a href="#ref-xue2017" class="ref-link" data-tooltip="Nanostructured Carbon">Xue 2017 P.1</a>).</p>
+
+                        <p><strong>Natural cellulose-based materials</strong> including wood, cotton cloth, and cellulose paper leverage inherent hierarchical porous structures and hydrophilic hydroxyl groups. The Xixi Piao 2024 study demonstrated that balsa wood with polypyrrole coating achieved 876 mV and 121.67 µA (<a href="#ref-xixipiao2024" class="ref-link" data-tooltip="Tree Transpiration WEG">Xixi Piao P.5-6</a>), while Li 2023 showed that woody biochar requires no additional hydrophilic treatment due to its natural functional groups (<a href="#ref-li2023" class="ref-link" data-tooltip="Woody Biochar WEG">Li 2023 P.5-6</a>).</p>
+
+                        <p><strong>Metal oxides</strong> (CuO, ZnO, TiO₂, NiO) serve dual purposes: enhancing charge transport and enabling photocatalytic activity. The CuO/ZnO heterostructure demonstrates S-scheme charge transfer mechanism with photocurrent density of 506 µA/cm² (<a href="#ref-cuozno" class="ref-link" data-tooltip="CuO/ZnO Photocatalyst">CuO/ZnO P.4-6</a>). <strong>Conductive polymers</strong> like polypyrrole (PPy) and PEDOT:PSS provide flexibility and ion transport pathways. Notably, <strong>G. sulfurreducens biofilms</strong> represent a unique biological approach, achieving the highest reported power density of 685 µW/cm² (<a href="#ref-hu2022" class="ref-link" data-tooltip="Geobacter Biofilm WEG">Hu 2022 P.3</a>). <strong>Hygroscopic agents</strong> such as LiCl enable moisture absorption for self-sustained operation (<a href="#ref-s41467" class="ref-link" data-tooltip="Self-Sustained Generator">s41467 P.5-7</a>).</p>
+                    </div>
+                </div>
+
+                <div class="qa-section">
+                    <h3 class="qa-question">2. How are the devices prepared differently?</h3>
+                    <div class="qa-answer">
+                        <p>Eight distinct fabrication methods were identified across the literature, varying significantly in complexity, equipment requirements, and scalability. <strong>Dip-coating</strong> is the most common and accessible method, used by CB on Cotton, Liu 2023, and Xixi Piao studies. The process involves preparing an ink (active material + binder + solvent), immersing the substrate, and drying at 60-100°C (<a href="#ref-cbcotton" class="ref-link" data-tooltip="CB on Cotton Cloth">CB Cotton P.2</a>, <a href="#ref-liu2023" class="ref-link" data-tooltip="Surface Modification">Liu 2023 P.2</a>).</p>
+
+                        <p><strong>Freeze-drying</strong> creates 3D porous structures, as demonstrated in GO sponges. GO is dispersed ultrasonically, frozen for 24 hours, freeze-dried under vacuum, and annealed at 200°C for 3.5 hours (<a href="#ref-gosponges" class="ref-link" data-tooltip="Porous GO Sponges">GO Sponges P.2</a>). <strong>Carbonization/pyrolysis</strong> converts biomass into conductive biochar at 500-800°C under nitrogen atmosphere (<a href="#ref-li2023" class="ref-link" data-tooltip="Woody Biochar WEG">Li 2023 P.2</a>). <strong>In-situ polymerization</strong> involves soaking substrates with monomers (e.g., pyrrole) and adding oxidants (FeCl₃) under pressure (<a href="#ref-xixipiao2024" class="ref-link" data-tooltip="Tree Transpiration WEG">Xixi Piao P.3</a>).</p>
+
+                        <p>More specialized methods include <strong>sol-gel synthesis</strong> for metal oxide heterostructures involving precursor dissolution, gelation at 65°C, and calcination at 400-550°C (<a href="#ref-cuozno" class="ref-link" data-tooltip="CuO/ZnO Photocatalyst">CuO/ZnO P.2</a>); <strong>bilayer assembly</strong> where separate functional layers are pressed together at 0.5 MPa (<a href="#ref-s41467" class="ref-link" data-tooltip="Self-Sustained Generator">s41467 P.7</a>); and <strong>biofilm deposition</strong>, the simplest approach requiring only drop-casting bacterial suspension and air drying (<a href="#ref-hu2022" class="ref-link" data-tooltip="Geobacter Biofilm WEG">Hu 2022 P.2, 8</a>).</p>
+                    </div>
+                </div>
+
+                <div class="qa-section">
+                    <h3 class="qa-question">3. How many papers use paper-based substrates?</h3>
+                    <div class="qa-answer">
+                        <p><strong>Seven out of fifteen papers (47%)</strong> utilize paper or cellulose-based substrates as key components in their WEG devices. These include:</p>
+
+                        <p><strong>Direct paper-based devices (4 papers):</strong> CB on Cotton Cloth uses cotton cloth with ~10 µm cellulose fibers, achieving 0.4V and 23.6 µA with 24+ hours continuous operation (<a href="#ref-cbcotton" class="ref-link" data-tooltip="CB on Cotton Cloth">CB Cotton P.2</a>). Xixi Piao 2024 employs balsa wood (cellulose + lignin) reaching 876 mV and 121.67 µA (<a href="#ref-xixipiao2024" class="ref-link" data-tooltip="Tree Transpiration WEG">Xixi Piao P.2-3</a>). Li 2023 uses woody biochar derived from lignocellulose (<a href="#ref-li2023" class="ref-link" data-tooltip="Woody Biochar WEG">Li 2023 P.2</a>). The s41467 Nature Communications paper utilizes cellulon paper (nanofibrillated cellulose) achieving the longest demonstrated stability of over 10 days (<a href="#ref-s41467" class="ref-link" data-tooltip="Self-Sustained Generator">s41467 P.2, 7</a>).</p>
+
+                        <p><strong>Papers discussing/using cellulose components (3 papers):</strong> Liu 2023 uses filter paper as a critical separator component—without it, voltage drops from 710 mV to just 50 mV (<a href="#ref-liu2023" class="ref-link" data-tooltip="Surface Modification">Liu 2023 P.4</a>). Both ChemPlusChem 2025 and WEG Review papers extensively discuss cellulose-based approaches including LiCl/cellulose bilayers and MWNT-coated cellulose filters (<a href="#ref-du2025" class="ref-link" data-tooltip="ChemPlusChem 2025 Review">ChemPlusChem P.6, 12</a>, <a href="#ref-wegreview" class="ref-link" data-tooltip="WEG Review Paper">WEG Review P.7</a>).</p>
+                    </div>
+                </div>
+
+                <div class="qa-section">
+                    <h3 class="qa-question">4. What evidence supports cellulose paper benefits for WEG?</h3>
+                    <div class="qa-answer">
+                        <p>Multiple studies provide compelling evidence that cellulose-based materials offer significant advantages for WEG applications. The evidence spans six key benefit categories:</p>
+
+                        <p><strong>Inherent hydrophilicity:</strong> Unlike synthetic carbon materials requiring plasma or chemical treatment, cellulose materials possess natural hydroxyl groups providing inherent hydrophilicity. Li 2023 demonstrated that woody biochar achieves instantaneous super-hydrophilicity with contact angles reaching 0° within seconds—a unique advantage over other carbon materials that require surface functionalization (<a href="#ref-li2023" class="ref-link" data-tooltip="Woody Biochar WEG">Li 2023 P.5-6</a>). Xixi Piao showed natural wood maintains a 25° contact angle due to abundant -OH groups (<a href="#ref-xixipiao2024" class="ref-link" data-tooltip="Tree Transpiration WEG">Xixi Piao P.5</a>).</p>
+
+                        <p><strong>Natural capillary structure:</strong> Cellulose materials provide hierarchical porous architectures enabling spontaneous water transport. The CB on Cotton study demonstrated continuous 24+ hour operation driven purely by capillary action through cotton rope water supply (<a href="#ref-cbcotton" class="ref-link" data-tooltip="CB on Cotton Cloth">CB Cotton P.2-3</a>). Wood-based devices leverage natural vessel channels evolved for water transport in trees.</p>
+
+                        <p><strong>Long-term stability:</strong> The LiCl/cellulose bilayer design in s41467 sustained 0.78V and 7.5 µA output for over 10 days continuous operation—the longest stability demonstrated in the literature (<a href="#ref-s41467" class="ref-link" data-tooltip="Self-Sustained Generator">s41467 P.2</a>). This system can operate across temperatures from -5°C to 35°C (<a href="#ref-s41467" class="ref-link" data-tooltip="Self-Sustained Generator">s41467 P.5</a>).</p>
+
+                        <p><strong>High evaporation rates:</strong> MWNT-coated cellulose filter paper achieved evaporation rates of 0.583 kg/m²/h in dark conditions and 1.48 kg/m²/h under 1 sun illumination (<a href="#ref-wegreview" class="ref-link" data-tooltip="WEG Review Paper">WEG Review P.7</a>).</p>
+
+                        <p><strong>Practical applications:</strong> Cellulose-based WEG devices have demonstrated real-world utility. The s41467 device successfully powered commercial electronic devices including cell phone charging (<a href="#ref-s41467" class="ref-link" data-tooltip="Self-Sustained Generator">s41467 P.2</a>). CB on Cotton achieved simultaneous electricity generation (0.4V, 23.6 µA) and desalination (29 mL freshwater + 0.825g salt recovery in 24 hours) (<a href="#ref-cbcotton" class="ref-link" data-tooltip="CB on Cotton Cloth">CB Cotton P.1, 4</a>).</p>
+                    </div>
+                </div>
+
+                <div class="qa-section">
+                    <h3 class="qa-question">5. What parameters are studied and how do they differ?</h3>
+                    <div class="qa-answer">
+                        <p>Fifteen key parameters were systematically studied across the literature, with significant variations in reported ranges and optimal values:</p>
+
+                        <p><strong>Electrical output parameters</strong> show wide ranges: Open-circuit voltage (Voc) spans from 0.1V in single devices to 7.3V in series-connected arrays (<a href="#ref-li2023" class="ref-link" data-tooltip="Woody Biochar WEG">Li 2023 P.8</a>), while short-circuit current (Isc) ranges from 0.1 µA to 700 µA/cm² (<a href="#ref-liu2023" class="ref-link" data-tooltip="Surface Modification">Liu 2023 P.1-2</a>). Power density varies dramatically from 0.02 µW/cm² to 685 µW/cm² (<a href="#ref-hu2022" class="ref-link" data-tooltip="Geobacter Biofilm WEG">Hu 2022 P.3</a>).</p>
+
+                        <p><strong>Environmental parameters</strong> significantly impact performance: Temperature studies range from -5°C to 90°C, with optimal performance typically at 30-40°C (<a href="#ref-xixipiao2024" class="ref-link" data-tooltip="Tree Transpiration WEG">Xixi Piao P.6</a>). Relative humidity (RH) effects were tested from 20% to 95%, with 50-60% emerging as optimal—providing sufficient moisture for ion transport while maintaining adequate evaporation driving force. Wind speed optimization shows 1.8-2.9 m/s enhances evaporation without excessive cooling (<a href="#ref-xixipiao2024" class="ref-link" data-tooltip="Tree Transpiration WEG">Xixi Piao P.7</a>).</p>
+
+                        <p><strong>Material properties</strong> vary significantly: Contact angle ranges from 143° (untreated carbon black) to 0° (super-hydrophilic treated surfaces), with values below 30° generally required for good performance (<a href="#ref-li2023" class="ref-link" data-tooltip="Woody Biochar WEG">Li 2023 P.6</a>). Zeta potential measurements span from -100 mV to +115 mV, with more negative values improving ion selectivity (<a href="#ref-xixipiao2024" class="ref-link" data-tooltip="Tree Transpiration WEG">Xixi Piao P.6</a>). O/C ratio (oxygen to carbon) ranges from 0.09 to 0.26, with higher ratios correlating to better hydrophilicity and performance (<a href="#ref-li2023" class="ref-link" data-tooltip="Woody Biochar WEG">Li 2023 P.6</a>).</p>
+
+                        <p><strong>Device geometry</strong> optimization shows height (2-10 cm), width (1-5 cm), and thickness (0.01-10 mm) all affect output. Xixi Piao identified optimal dimensions of 8 cm height, 2 cm width, and 1 mm thickness (<a href="#ref-xixipiao2024" class="ref-link" data-tooltip="Tree Transpiration WEG">Xixi Piao P.5-6</a>). Operating stability ranges from 6 hours to over 1000 hours, with ionic hydrogels achieving the longest continuous operation (<a href="#ref-shao2023" class="ref-link" data-tooltip="Phase Transitions Review">Shao 2023 P.16</a>).</p>
+                    </div>
+                </div>
+
+                <div class="qa-section">
+                    <h3 class="qa-question">6. What are the most crucial parameters to study?</h3>
+                    <div class="qa-answer">
+                        <p>Based on quantitative analysis across the literature, parameters can be ranked into two tiers of importance:</p>
+
+                        <p><strong>Tier 1 - Critical Parameters (must optimize):</strong></p>
+
+                        <p><em>1. Evaporation Rate:</em> This is the single most important parameter with a direct, quantified correlation to power output. Hu 2022's PLS-PM (Partial Least Squares Path Modeling) analysis revealed a +0.5482 effect coefficient, meaning evaporation rate has the strongest predictive relationship with electricity generation (<a href="#ref-hu2022" class="ref-link" data-tooltip="Geobacter Biofilm WEG">Hu 2022 P.6</a>). Higher evaporation rates consistently yield higher power—optimize through material porosity, surface area, and environmental conditions.</p>
+
+                        <p><em>2. Humidity Gradient:</em> The humidity difference between the wet substrate and surrounding air provides the thermodynamic driving force for ion migration. Optimal RH is 50-60%: too low reduces water availability, too high diminishes evaporation rate. Multiple papers confirm voltage drops significantly at both humidity extremes.</p>
+
+                        <p><em>3. Surface Functional Groups (O/C Ratio):</em> The oxygen-to-carbon ratio determines surface hydrophilicity and ion interaction strength. Li 2023 directly compared biochar from different sources: FClig-800 (O/C = 0.26) significantly outperformed FCcel-800 (O/C = 0.16) (<a href="#ref-li2023" class="ref-link" data-tooltip="Woody Biochar WEG">Li 2023 P.6</a>). Target O/C ratios above 0.2 through appropriate material selection or surface treatment.</p>
+
+                        <p><em>4. Zeta Potential:</em> Surface charge density determines ion selectivity in nanochannels. More negative zeta potentials improve cation selectivity and streaming potential generation. Xixi Piao demonstrated zeta potential shifts from -23.75 mV (raw wood) to +115.50 mV after PPy modification, enabling tunable charge transport (<a href="#ref-xixipiao2024" class="ref-link" data-tooltip="Tree Transpiration WEG">Xixi Piao P.6</a>).</p>
+
+                        <p><strong>Tier 2 - Important Parameters (should optimize):</strong> Pore size (optimal near Debye length ~1 µm), temperature (30-40°C optimal), device geometry, electrode material selection (avoid electrochemical reactions), wind speed (1.8-2.9 m/s), and contact angle (&lt;30°).</p>
+                    </div>
+                </div>
+
+                <div class="qa-section">
+                    <h3 class="qa-question">7. Recommended workflow for CuO-ZnO on cellulose/polyester composite</h3>
+                    <div class="qa-answer">
+                        <p>Based on synthesis of protocols from CuO/ZnO photocatalyst, s41467, CB Cotton, and other papers, the following four-phase workflow is recommended:</p>
+
+                        <p><strong>Phase 1 - Material Synthesis (2-3 weeks):</strong> Begin with ZnO nanoparticle synthesis via sol-gel method: dissolve Zn(NO₃)₂ with Poloxamer 188 surfactant in ethanol, stir for 2 hours, dry at 40°C for 12 hours, form gel at 65°C for 12 hours, then calcinate at 550°C for 4 hours (<a href="#ref-cuozno" class="ref-link" data-tooltip="CuO/ZnO Photocatalyst">CuO/ZnO P.2</a>). For the heterostructure, disperse 1.0g ZnO in 100 mL ethanol, add Cu(NO₃)₂ at 9 wt% ratio (literature-optimized), and calcinate at 400°C for 3 hours. Characterize using XRD (crystal structure), SEM/TEM (morphology), BET (target ~250 m²/g surface area), XPS (confirm functional groups), and UV-Vis (target bandgap ~2.6 eV).</p>
+
+                        <p><strong>Phase 2 - Substrate Preparation (1 week):</strong> Obtain cellulose/polyester composite paper—either commercial filter paper or custom electrospun nanofibers. Apply oxygen plasma treatment (130W, 1-5 minutes) to enhance surface hydrophilicity (<a href="#ref-xue2017" class="ref-link" data-tooltip="Nanostructured Carbon">Xue 2017 P.1</a>, <a href="#ref-s41467" class="ref-link" data-tooltip="Self-Sustained Generator">s41467 P.7</a>). Verify contact angle is below 30° before proceeding.</p>
+
+                        <p><strong>Phase 3 - Device Fabrication (1-2 weeks):</strong> Prepare coating ink with CuO-ZnO nanoparticles, PVDF binder, and NMP solvent at 8:1:1 ratio by weight (<a href="#ref-liu2023" class="ref-link" data-tooltip="Surface Modification">Liu 2023 P.2</a>). Apply via dip-coating or brush coating, then dry at 60-100°C. Attach electrodes (copper sheets, gold sputtering, or carbon tape) with 2-5 cm spacing. Encapsulate electrical connections with epoxy to prevent corrosion.</p>
+
+                        <p><strong>Phase 4 - Testing & Optimization (2-3 weeks):</strong> Perform electrical characterization including Voc, Isc, full I-V curves, and power output versus load resistance (test 100 Ω to 10 MΩ range). Conduct environmental testing across humidity (20-90% RH), temperature (20-60°C), and wind speed (0-3 m/s). Test long-term stability for minimum 72 hours continuous operation. For solar enhancement, compare performance under dark conditions versus 1 sun illumination (1 kW/m²), monitoring temperature rise, evaporation rate changes, and electrical output enhancement (<a href="#ref-cbcotton" class="ref-link" data-tooltip="CB on Cotton Cloth">CB Cotton P.3-4</a>).</p>
+
+                        <p><strong>Expected Results:</strong> Based on comparable systems in the literature, anticipate: Voltage of 0.5-1.0V (single device), current of 1-50 µA, power density of 10-100 µW/cm², solar enhancement of 2-3× improvement over dark conditions, and stability of 24-72+ hours continuous operation. Series connection of 10-20 devices could achieve 5-10V for practical applications.</p>
+                    </div>
+                </div>
+
+                <div class="qa-section">
+                    <h3 class="qa-question">8. Solar heating and photocatalysis integration</h3>
+                    <div class="qa-answer">
+                        <p>Solar energy integration with WEG systems operates through two distinct but complementary mechanisms:</p>
+
+                        <p><strong>Solar Heating (Photothermal Enhancement):</strong> Light-absorbing materials convert solar radiation to heat, increasing local temperature and accelerating water evaporation. PPy@CuO composites achieved 97.5% solar-to-thermal conversion efficiency with evaporation rates of 3.3 kg/m²/h (<a href="#ref-du2025" class="ref-link" data-tooltip="ChemPlusChem 2025 Review">ChemPlusChem P.12</a>). Carbon black's photothermal properties create beneficial dry/wet interfaces at the evaporation surface—CB Cotton demonstrated continuous operation under 1 sun illumination (<a href="#ref-cbcotton" class="ref-link" data-tooltip="CB on Cotton Cloth">CB Cotton P.3-4</a>). Liu 2023 quantified the enhancement: current increased from 4.3 µA (wet only) to 13.3 µA (1 sun) to 89.7 µA (direct heating)—a 20× improvement (<a href="#ref-liu2023" class="ref-link" data-tooltip="Surface Modification">Liu 2023 P.4-5</a>). The WEG Review reports solar-vapor systems achieving apparent efficiencies exceeding 100% through environmental heat harvesting, with power outputs reaching 292.9 W/m² at 30 suns concentration (<a href="#ref-wegreview" class="ref-link" data-tooltip="WEG Review Paper">WEG Review P.3</a>).</p>
+
+                        <p><strong>Photocatalysis (Direct Charge Generation):</strong> Semiconductor heterostructures generate electron-hole pairs under illumination, providing additional charge carriers beyond the streaming potential mechanism. Your proposed CuO-ZnO system operates via S-scheme heterojunction: under illumination, photogenerated electrons in CuO's conduction band recombine with holes in ZnO's valence band, leaving high-energy electrons in ZnO and high-energy holes in CuO for enhanced redox reactions. The 9% CuO/ZnO composite achieved 506 µA/cm² photocurrent density (<a href="#ref-cuozno" class="ref-link" data-tooltip="CuO/ZnO Photocatalyst">CuO/ZnO P.4-6</a>). ZnO/NiO p-n junctions create built-in electric fields that improve charge separation and catalytic activity (<a href="#ref-znonio" class="ref-link" data-tooltip="Enhanced Charge Separation">ZnO/NiO P.3-4</a>). TiO₂ nanowires enable UV-driven photocatalytic destruction of the electric double layer, releasing ions and enhancing current flow (<a href="#ref-wegreview" class="ref-link" data-tooltip="WEG Review Paper">WEG Review P.8</a>).</p>
+
+                        <p><strong>Integration Strategy for Your CuO-ZnO Project:</strong> The CuO-ZnO heterostructure offers both mechanisms: CuO provides photothermal heating (narrow bandgap ~1.4 eV absorbs visible light efficiently), while the CuO-ZnO interface enables S-scheme photocatalysis under UV-visible illumination. Consider adding carbon black as a supplementary photothermal agent to maximize evaporation rate enhancement. Test under AM 1.5G solar simulation (1 kW/m²) and separately characterize photothermal (temperature rise, evaporation rate) versus photocatalytic (photocurrent, spectral response) contributions.</p>
+                    </div>
+                </div>
+
+                <div class="qa-section">
+                    <h3 class="qa-question">9. Points requiring extra attention</h3>
+                    <div class="qa-answer">
+                        <p>Ten critical considerations will determine the success of your WEG research:</p>
+
+                        <p><strong>1. Surface Functionalization is Non-Negotiable:</strong> This is perhaps the most critical factor determining device success or failure. Untreated carbon black produces only ~45 µV, while properly functionalized surfaces generate 1V—a 22,000× difference (<a href="#ref-xue2017" class="ref-link" data-tooltip="Nanostructured Carbon">Xue 2017 P.1</a>). You must introduce oxygen-containing functional groups (-OH, -COOH, C=O) through plasma treatment, UV/ozone exposure, or chemical oxidation. Verify treatment success by measuring contact angle (must be &lt;30°) and confirm by XPS analysis.</p>
+
+                        <p><strong>2. Moisture Management:</strong> WEG devices require a continuous moisture gradient—they stop working immediately when sealed. Maintain relative humidity at 50-60% for optimal balance between water availability and evaporation driving force. The dry/wet interface at the evaporation surface is critical; disrupting this interface eliminates power output.</p>
+
+                        <p><strong>3. Electrode Selection:</strong> Wrong electrode choice can introduce parasitic electrochemical reactions that mask or interfere with the WEG signal. Graphite and carbon-based electrodes are preferred (<a href="#ref-hu2022" class="ref-link" data-tooltip="Geobacter Biofilm WEG">Hu 2022 P.3</a>). If using metals, gold is electrochemically stable; avoid reactive metals in contact with ionic solutions. Ensure good ohmic contact to minimize interfacial resistance.</p>
+
+                        <p><strong>4. Device Orientation:</strong> Gravity affects water distribution and capillary transport. Most studies report optimal performance at 45-90° angles where capillary rise balances gravitational drainage (<a href="#ref-gosponges" class="ref-link" data-tooltip="Porous GO Sponges">GO Sponges P.3</a>). Test multiple orientations for your specific geometry.</p>
+
+                        <p><strong>5. Scaling Considerations:</strong> Series connection increases voltage (demonstrated up to 145V with large arrays), while parallel connection increases current. However, integration losses occur at scale—expect 80-90% efficiency compared to theoretical summation. Interconnection resistance and non-uniform evaporation across large arrays are common issues.</p>
+
+                        <p><strong>6. Environmental Stability Testing:</strong> Real-world deployment requires operation across varying conditions. Test temperature range (-5 to 60°C minimum), humidity variations (day/night cycles), wind effects (both enhancement and cooling), and UV exposure stability. Document performance degradation rates.</p>
+
+                        <p><strong>7. Salt/Ion Management:</strong> If using ionic solutions or seawater, salt crystallization will progressively block pores and degrade performance. Cotton-based devices show promise for salt management with 81.3% salt recovery capability (<a href="#ref-cbcotton" class="ref-link" data-tooltip="CB on Cotton Cloth">CB Cotton P.4</a>). Consider periodic washing or continuous salt removal strategies.</p>
+
+                        <p><strong>8. Material Degradation:</strong> Plan for long-term stability assessment. Carbon materials may oxidize under continuous humid conditions; polymers degrade under UV exposure; biofilms require nutrients. CuO-ZnO specifically: monitor for Cu leaching and ZnO dissolution in acidic conditions.</p>
+
+                        <p><strong>9. Measurement Protocol:</strong> WEG signals are small and easily corrupted. Use high-impedance voltmeters (&gt;10 MΩ input impedance). Shield from electromagnetic interference. Control ambient temperature and humidity during measurements. Critical validation: sealing the device should immediately stop voltage generation—if it doesn't, you're measuring an artifact.</p>
+
+                        <p><strong>10. Safety for CuO-ZnO Nanomaterials:</strong> Nanoparticle safety protocols are essential. Use appropriate PPE (N95 respirators, gloves, lab coat) during synthesis and handling. Work in fume hoods during calcination. Properly dispose of nanoparticle-containing waste according to institutional guidelines. Document all safety procedures for your thesis/publication.</p>
                     </div>
                 </div>
             </section>
