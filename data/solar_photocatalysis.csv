@@ -1,0 +1,13 @@
+Paper,Type,Material_System,Mechanism,Performance_Enhancement,Page_Reference
+ChemPlusChem 2025,Solar Heating,PPy@CuO photothermal,Photothermal conversion,97.5% solar efficiency 3.3 kg/m2/h evaporation,P.12
+WEG Review,Solar Heating,Carbon sponge photothermal,Solar-vapor conversion,>100% efficiency 292.9 W/m2 at 30 suns,P.3
+CB on Cotton,Solar Heating,CB photothermal effect,Creates dry/wet interface,Continuous operation under 1 sun,P.3-4
+Liu 2023,Solar Heating,CNT/CB light absorption,Evaporation enhancement,4.3uA (wet) -> 13.3uA (light) -> 89.7uA (heated),P.4-5
+Shao 2023,Solar Heating,BBNC evaporator,Photothermal + evaporation,0.41V (dark) -> 0.52V (1 sun),P.24
+s41467,Solar Heating,Carbon black absorption,Enhanced evaporation rate,>2x evaporation rate under light,P.3
+CuO/ZnO,Photocatalysis,9% CuO/ZnO S-scheme,S-scheme heterojunction,506 uA/cm2 photocurrent 99% Hg reduction,P.4-6
+Enhanced Charge,Photocatalysis,ZnO/NiO p-n junction,Built-in electric field BEF,ORR/OER for Zn-air battery,P.3-4
+WEG Review,Photocatalysis,TiO2 nanowires,UV photocatalytic EDL destruction,Enhanced electric generation,P.8
+Shao 2023,Photocatalysis,PSSA/Rose Bengal,Photon harvesting,0.92V 1.55 mA/cm2 highest current recorded,P.17
+Shao 2023,Photocatalysis,CNx/G. sulfurreducens,Heterojunction dual energy,0.48V 4 uA/cm2 moisture+sunlight synergy,P.17
+ChemPlusChem 2025,Solar Integration,GQDs MXene nanocomposites,Photothermal conversion,>100V ultra-high voltage 45.6 uW/cm2,P.9

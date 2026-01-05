@@ -1,0 +1,11 @@
+Rank,Parameter,Importance_Tier,Effect_on_Performance,Optimal_Range,Evidence_Source,Page_Reference
+1,Evaporation Rate,Tier 1 Critical,Direct correlation with power - higher evaporation = more electricity,Higher is better,PLS-PM analysis +0.5482 coefficient,Hu 2022 P.6
+2,Humidity Gradient,Tier 1 Critical,Driving force for ion migration,50-60% RH optimal,Multiple papers show voltage drops at high/low RH,Multiple
+3,Surface Functional Groups,Tier 1 Critical,O/C ratio determines hydrophilicity and ion interaction,Higher O/C better,FClig-800 O/C=0.26 outperformed FCcel-800 O/C=0.16,Li 2023 P.6
+4,Zeta Potential,Tier 1 Critical,Surface charge density affects ion selectivity,More negative better,-23.75mV raw -33.2mV treated,Xixi Piao P.6 Xue P.3
+5,Pore Size,Tier 2 Important,Affects capillary force and ion transport,Near Debye length ~1um,Smaller pores = higher capillary force,Multiple
+6,Temperature,Tier 2 Important,Affects evaporation kinetics,30-40C optimal,Higher temp = faster evaporation,Xixi Piao P.6
+7,Device Geometry,Tier 2 Important,Height width thickness all affect performance,8cm H 2cm W 1mm T,Xixi Piao optimal dimensions,Xixi Piao P.5-6
+8,Electrode Material,Tier 2 Important,Must avoid electrochemical reactions,Cu Au carbon,Graphite/carbon preferred,Hu 2022 P.3
+9,Wind Speed,Tier 2 Important,Enhances evaporation rate,1.8-2.9 m/s,Too high may cool device,Xixi Piao P.7 Xue P.2
+10,Contact Angle,Tier 2 Important,Indicates hydrophilicity,<30 degrees,143 deg (pristine) vs 10 deg (treated),Xue 2017 P.9

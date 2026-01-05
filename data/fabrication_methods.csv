@@ -1,0 +1,13 @@
+Method,Papers_Using,Key_Steps,Temperature,Duration,Equipment_Needed,Page_Reference
+Dip-Coating,CB Cotton Liu 2023 Xixi Piao,Prepare ink - immerse substrate - dry,60-100C drying,30min-12h,Oven ultrasonic bath,CB Cotton P.2 Liu P.2
+Freeze-Drying,GO Sponges,Disperse - freeze 24h - freeze-dry - anneal,200C annealing,24h freeze + 3.5h anneal,Freeze dryer muffle furnace,GO Sponges P.2
+Carbonization,Li 2023 Xue 2017,Wash - grind - carbonize under N2,500-800C,2h carbonization,Tube furnace ball mill,Li 2023 P.2 Xue P.6
+In-situ Polymerization,Xixi Piao,Soak with monomer - add oxidant - polymerize,Room temperature,Pressure 10min,Pressure vessel,Xixi Piao P.3
+Biofilm Deposition,Hu 2022,Culture bacteria - drop cast - air dry,Room temperature,Several hours,Anaerobic chamber,Hu 2022 P.2 8
+Sol-Gel,CuO/ZnO,Dissolve precursors - stir - gel - calcinate,40-65C gel 400-550C calcine,12h gel 3-4h calcine,Hot plate furnace,CuO/ZnO P.2
+Bilayer Assembly,s41467,Prepare layers separately - press together,100C drying,0.5 MPa pressing,Press oven,s41467 P.7
+Flame Synthesis,Xue 2017,Position substrate in flame - collect CB,790-830C flame,5 min,Ethanol burner quartz,Xue 2017 P.3 SI
+Screen Printing,WEG Review,Prepare ink - screen print pattern,varies,varies,Screen printer,WEG Review P.7
+Electrospinning,Shao 2023,Polymer solution - electrospun fibers,varies,varies,Electrospinning setup,Shao P.15
+MOF Synthesis,Shao 2023 Enhanced Charge,Solvothermal synthesis,150C,6h,Autoclave reactor,Enhanced Charge P.2
+Plasma Treatment,Multiple,Oxygen plasma on surface,varies,1-5 min,Plasma cleaner,Xue P.1 s41467 P.7

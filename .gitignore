@@ -1,0 +1,12 @@
+# Large files
+*.rar
+*.zip
+
+# PDF reference papers (large files)
+Ref Papers/
+
+# Plans folder (internal)
+plans/
+
+# OS files
+.DS_Store

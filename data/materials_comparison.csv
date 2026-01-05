@@ -1,0 +1,20 @@
+Material_Category,Specific_Materials,Typical_Voltage,Key_Advantage,Papers_Using,Page_Reference
+Carbon-based,Carbon black CB,0.4-1.5V,Easy synthesis low cost,Xue 2017 CB Cotton Liu 2023,Xue P.1 CB Cotton P.2
+Carbon-based,Graphene oxide GO,0.2-1.5V,High surface area tunable groups,GO Sponges WEG Review,GO Sponges P.2
+Carbon-based,Reduced GO rGO,0.44-0.63V,Better conductivity,GO Sponges,GO Sponges P.5
+Carbon-based,Carbon nanotubes CNTs,0.1-0.71V,High conductivity flexibility,Liu 2023 WEG Review,Liu P.2
+Natural/Cellulose,Natural wood,0.3-0.9V,Hierarchical channels hydroxyl groups,Xixi Piao ChemPlusChem,Xixi Piao P.2-3
+Natural/Cellulose,Cellulose paper/filter,0.78V,Porous hydrophilic cheap,s41467 Liu 2023,s41467 P.2
+Natural/Cellulose,Cotton cloth,0.4V,Capillary action flexibility,CB Cotton,CB Cotton P.2
+Natural/Cellulose,Woody biochar,0.42V,No treatment needed,Li 2023,Li 2023 P.5-6
+Metal Oxides,CuO,varies,Photothermal photocatalytic,CuO/ZnO ChemPlusChem,CuO/ZnO P.2
+Metal Oxides,ZnO,varies,Wide bandgap charge transport,CuO/ZnO Enhanced Charge,CuO/ZnO P.2
+Metal Oxides,TiO2,0.5V,Photocatalytic UV response,WEG Review Shao 2023,WEG Review P.8
+Metal Oxides,NiO,varies,p-type semiconductor,Enhanced Charge,Enhanced Charge P.3
+Polymers,Polypyrrole PPy,0.8-0.9V,Conductive photothermal,Xixi Piao ChemPlusChem,Xixi Piao P.3
+Polymers,PSSA,0.8-0.92V,Proton conducting,Shao 2023,Shao P.15 17
+Polymers,PEDOT:PSS,2.13V,High conductivity,Shao 2023,Shao P.15
+Polymers,PVDF,varies,Binder piezoelectric,Liu 2023 WEG Review,Liu P.2
+Biofilms,G. sulfurreducens,0.53V,Highest power 685 uW/cm2,Hu 2022,Hu 2022 P.3
+Hygroscopic,LiCl,0.78V,Moisture absorption,s41467,s41467 P.5-7
+Hygroscopic,CaCl2,varies,Alternative hygroscopic,s41467,s41467 P.5

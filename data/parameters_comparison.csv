@@ -1,0 +1,16 @@
+Parameter,Range_Tested,Optimal_Value,Best_Paper,Best_Value,Page_Reference
+Voltage_Voc,0.1-7.3V,varies,Li 2023 (20 series),7.3V,Li 2023 P.8
+Current_Isc,0.1-700 uA/cm2,varies,Liu 2023,700 uA/cm2,Liu 2023 P.1-2
+Power_Density,0.02-685 uW/cm2,varies,Hu 2022,685 uW/cm2,Hu 2022 P.3
+Temperature,-5C to 90C,30-40C optimal,Xixi Piao,40C,Xixi Piao P.6
+Humidity_RH,20%-95%,50-60% optimal,Multiple,50-60%,Multiple papers
+Wind_Speed,0-8 m/s,1.8-2.9 m/s,Xixi Piao,1.8 m/s (0.92V),Xixi Piao P.7
+Device_Thickness,0.01-10mm,1-2mm,s41467,2mm optimal,s41467 P.6
+Electrode_Distance,0.2-10cm,2-5cm,Multiple,varies,Multiple papers
+Operating_Time,6-1000+ hours,continuous,Shao 2023 ionic hydrogel,>1000 hours,Shao P.16
+Evaporation_Rate,0.31-6.8 kg/m2/h,higher better,ChemPlusChem,6.8 kg/m2/h,ChemPlusChem P.13
+Contact_Angle,0-143 degrees,<30 degrees,Li 2023,0 degrees,Li 2023 P.6
+Zeta_Potential,-100 to +115 mV,more negative,Xixi Piao,-23.75 mV (raw),Xixi Piao P.6
+O/C_Ratio,0.09-0.26,higher better,Li 2023 FClig-800,0.26,Li 2023 P.6
+Surface_Area,107-250 m2/g,higher better,CuO/ZnO,250 m2/g,CuO/ZnO P.3
+Bandgap_eV,1.8-3.18 eV,narrower for light,CuO/ZnO,2.60 eV (9% CuO),CuO/ZnO P.3

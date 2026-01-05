@@ -1,0 +1,14 @@
+Source_Paper,Benefit_Type,Evidence_Description,Performance_Data,Page_Reference
+ChemPlusChem 2025,Long-term stability,LiCl/cellulose bilayer sustains output for extended period,0.78V 7.5uA for 10+ days,P.6
+ChemPlusChem 2025,High power density,RC/CNT fibers achieve volume power density,0.4 mW/cm3,P.9
+WEG Review,High evaporation rate,MWNT/cellulose paper evaporation performance,0.583 kg/m2/h (dark) 1.48 kg/m2/h (1 sun),P.7
+Xixi Piao 2024,Natural capillary,Natural wood channels + hydroxyl groups excellent hydrophilicity,25 degree water contact angle,P.5
+Xixi Piao 2024,High electrical output,Wood-based PPy composite performance,876 mV voltage 121.67 uA current,P.5-6
+Li 2023,Simplified fabrication,NO hydrophilic treatment required - unique advantage,Inherent functional groups,P.5-6
+Li 2023,Instant hydrophilicity,Contact angle reaches 0 degrees in seconds,Super-wetting behavior,P.6
+CB on Cotton,Continuous operation,Capillary-driven spontaneous water supply via cotton rope,24+ hours continuous operation,P.2-3
+CB on Cotton,Multifunctionality,Desalination + electricity generation simultaneously,29 mL freshwater + 0.825g salt in 24h,P.1 4
+s41467,Practical application,Powers commercial electronic devices,Cell phone charging demonstrated,P.2
+s41467,Porous structure,Highly porous fluffy multilayered architecture of cellulon paper,Enables moisture absorption and water transfer,P.2
+s41467,Temperature stability,Works across wide temperature range,-5C to 35C operation,P.5
+Liu 2023,Critical separator function,Filter paper essential for device operation,50mV without vs 710mV with filter paper,P.4
